@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.finalexam.ThirdActivity">
+
+    <ImageView
+        android:id="@+id/peoplepicture"
+        android:layout_width="@dimen/peoplepicture"
+        android:layout_height="@dimen/peoplepicture"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/peoplepicture" />
+
+    <RelativeLayout
+        android:id="@+id/iconstextlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peoplepicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacepeopleimagebuttons">
+
+        <RelativeLayout
+            android:id="@+id/iconslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:layout_marginRight="@dimen/rightspace"
+                android:scaleType="fitXY"
+                android:src="@drawable/heart" />
+
+            <ImageButton
+                android:layout_toRightOf="@id/button1"
+                android:id="@+id/button2"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:layout_marginRight="@dimen/rightspace"
+                android:scaleType="fitXY"
+                android:src="@drawable/envelope" />
+
+            <ImageButton
+                android:layout_toRightOf="@id/button2"
+                android:id="@+id/button3"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:layout_marginRight="@dimen/rightspace"
+                android:scaleType="fitXY"
+                android:src="@drawable/addressbook" />
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_toRightOf="@id/button3"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:scaleType="fitXY"
+                android:src="@drawable/logout" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textlayout"
+            android:layout_below="@id/iconslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightspace"
+                android:text="@string/button1" />
+
+            <TextView
+                android:id="@+id/tv_button2"
+                android:layout_toRightOf="@id/tv_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightspace"
+                android:text="@string/button2" />
+
+            <TextView
+                android:id="@+id/tv_button3"
+                android:layout_toRightOf="@id/tv_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightspace"
+                android:text="@string/button3" />
+
+            <TextView
+                android:id="@+id/tv_button4"
+                android:layout_toRightOf="@id/tv_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightspace"
+                android:text="@string/button4" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
